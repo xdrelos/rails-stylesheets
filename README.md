@@ -4,11 +4,10 @@ Ensure you have the following gems in your Rails `Gemfile`
 
 ```ruby
 # Gemfile
+gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
-gem 'autoprefixer-rails'
-gem 'jquery-rails' # Add this line if you use Rails 5.1
 ```
 
 In your terminal, generate SimpleForm Bootstrap config.
@@ -24,17 +23,6 @@ Then replace Rails' stylesheets by Le Wagon's stylesheets:
 rm -rf app/assets/stylesheets
 curl -L https://github.com/lewagon/stylesheets/archive/master.zip > stylesheets.zip
 unzip stylesheets.zip -d app/assets && rm stylesheets.zip && mv app/assets/rails-stylesheets-master app/assets/stylesheets
-```
-
-Don't forget the sprockets directives in `assets/javascripts/application.js`
-
-```javascript
-// app/assets/javascripts/application.js
-
-//= require jquery
-//= require jquery_ujs
-//= require bootstrap-sprockets
-//= require_tree .
 ```
 
 And the viewport in the layout
