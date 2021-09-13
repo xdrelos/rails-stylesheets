@@ -9,7 +9,7 @@ rails new APP_NAME
 Ensure you have bootstrap and it's dependencies
 
 ```bash
-yarn add bootstrap
+yarn add bootstrap@4.6
 yarn add jquery popper.js
 ```
 
